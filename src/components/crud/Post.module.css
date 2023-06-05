@@ -1,0 +1,205 @@
+.post {
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 01rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorInfo strong {
+    display: block;
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.authorInfo span {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+/*Criado*/
+.commentForm input {
+    width: 100%;
+    background: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.commentForm textarea {
+    width: 100%;
+    background: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.commentForm footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm button[type=submit] {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0%;
+    border-radius: 8px;
+    border: 0;
+    background: var(--green-500);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.commentForm button[type=submit]:hover {
+    background: var(--green-300);
+}
+
+.h3 {
+    color: var(--gray-100);
+    line-height: 1.6;
+    margin: auto;
+}
+
+.veiculos {
+    display: flex;
+    margin-top: -2rem;
+    padding: 0.2rem;
+    border-radius: 8px;
+    background: var(--gray-900);
+    border: 1px solid var(--gray-600);
+    width: auto;
+}
+
+.veiculos thead {
+
+    width: 100%;
+    margin-top: 0.1rem;
+    background: var(--gray-900);
+
+}
+
+.veiculos thead th {
+
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--gray-900);
+    font-size: 1.2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    width: calc(100% / 4);
+    border-collapse: separate;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.btn {
+    background-color: var(--green-500);
+}
+
+.btn:hover {
+    background-color: var(--green-800);
+    animation: inflar 0.4s forwards;
+}
+
+.btnDelet {
+    background-color: #db4d4a;
+}
+
+.btnDelet:hover {
+    background-color: red;
+    animation: inflar 0.4s forwards;
+}
+
+@keyframes inflar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.card {
+    background-color: var(--gray-600);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 40%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
