@@ -72,14 +72,14 @@ export function PostEdit() {
                     onChange={(e) => setEditProdutos({ ...editprodutos, preco_venda: e.target.value })}
                 />
                 <input
-                    type="text"
+                    type="date"
                     name="lote"
                     placeholder="Lote"
                     value={editprodutos.lote || ''}
                     onChange={(e) => setEditProdutos({ ...editprodutos, lote: e.target.value })}
                 />
                 <input
-                    type="text"
+                    type="date"
                     name="data_aquisicao"
                     placeholder="Data de Aquisição"
                     value={editprodutos.data_aquisicao || ''}
@@ -100,7 +100,7 @@ export function PostEdit() {
                     onChange={(e) => setEditProdutos({ ...editprodutos, fornecedor: e.target.value })}
                 />
                 <input
-                    type="text"
+                    type="date"
                     name="validade"
                     placeholder="Validade do Produto"
                     value={editprodutos.validade || ''}
